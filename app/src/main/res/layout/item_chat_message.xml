@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:padding="5dp">
+
+<TextView
+android:id="@+id/textViewU"
+android:layout_width="30dp"
+android:layout_height="30dp"
+android:layout_marginStart="290dp"
+android:text="U"
+android:gravity="center"
+android:textColor="@color/black"
+android:textStyle="bold"
+android:textSize="16sp"
+android:background="@drawable/ai_icon_background"/>
+
+<TextView
+android:id="@+id/textViewUserQuestion"
+android:layout_width="210dp"
+android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+android:layout_below="@id/textViewU"
+android:layout_marginStart="120dp"
+android:background="@drawable/text_view_gray_background"
+android:gravity="center"
+android:padding="10dp"
+android:textColor="@color/black"
+android:textSize="18sp"
+android:textStyle="bold" />
+
+<ImageView
+android:id="@+id/imageViewAi2"
+android:layout_below="@id/textViewUserQuestion"
+android:layout_width="30dp"
+android:layout_height="30dp"
+android:src="@drawable/layer_list"/>
+
+<TextView
+android:id="@+id/textViewWAiRespond"
+android:layout_width="210dp"
+android:layout_below="@id/imageViewAi2"
+    android:layout_marginTop="10dp"
+android:padding="10dp"
+android:layout_height="wrap_content"
+android:gravity="center"
+android:textColor="@color/black"
+android:background="@drawable/text_view_gray_background"
+android:textSize="18sp"
+android:textStyle="bold"/>
+</RelativeLayout>

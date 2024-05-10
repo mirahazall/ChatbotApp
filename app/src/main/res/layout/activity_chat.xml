@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/imageViewAi"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/layer_list"/>
+
+    <TextView
+        android:id="@+id/textViewWelcomeUser"
+        android:layout_width="210dp"
+        android:layout_below="@id/imageViewAi"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:text="Welcome User!"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:background="@drawable/text_view_gray_background"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_below="@id/textViewWelcomeUser"
+        android:layout_height="485dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/chatMessagesRecyclerView"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/chatMessagesRecyclerView">
+    <EditText
+        android:id="@+id/editTextUserInput"
+        android:layout_width="293dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="28dp"
+        android:layout_toLeftOf="@id/buttonSend"
+        android:background="@drawable/text_view_gray_background" />
+
+    <TextView
+        android:id="@+id/textViewButton"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="255dp"
+        android:background="@drawable/text_view_gray_background" />
+
+    <ImageButton
+        android:id="@+id/buttonSend"
+        android:layout_width="45dp"
+        android:layout_height="47dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/button_layer_list"
+        android:src="@drawable/ic_send_button" />
+</RelativeLayout>
+</RelativeLayout>
